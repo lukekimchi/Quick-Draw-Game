@@ -1,0 +1,447 @@
+#btnStartGame {
+    -fx-background-color:
+            #ffcc05,
+            linear-gradient(gold, gold);    
+    -fx-background-insets: 0,3;
+    -fx-background-radius: 50%;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+}
+
+#btnStartGame:hover {
+    -fx-background-color:
+            #ffcc05,
+            linear-gradient(rgba(255, 217, 0, 0.95), rgba(255, 217, 0, 0.95));
+    -fx-background-insets: 0,3;
+    -fx-background-radius: 50%;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-scale-x: 105%;
+    -fx-scale-y: 105%;
+}
+
+#btnPen{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/images/longPencil.png");
+    -fx-background-repeat: no-repeat;
+}
+
+#btnEraser{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/images/betterEraser.png");
+    -fx-background-repeat: no-repeat;
+}
+
+#btnPen:hover{
+    -fx-background-color: transparent;
+    fx-background-image: url("/images/longPencil.png");
+    -fx-background-repeat: no-repeat;
+    -fx-pref-height:65;
+    -fx-translate-y:-15;
+        
+}
+
+#lblWinOrLose {
+	-fx-background-color: transparent;
+	-fx-background-size: stretch;
+	-fx-background-position: center;
+	background-repeat: no-repeat;
+}
+
+#btnPlayAgain {
+	-fx-background-color: transparent;
+	-fx-background-image: url("/images/playAgain.png");
+	-fx-background-size: stretch;
+	background-repeat: no-repeat;
+}
+#btnPlayAgain:hover {
+	-fx-background-color: transparent;
+	-fx-background-image: url("/images/playAgainHover.png");
+
+	-fx-background-size: stretch;
+	background-repeat: no-repeat;
+	-fx-translate-y:-5;
+	-fx-translate-x:2;
+	
+}
+
+#btnSaveDrawing {
+	-fx-background-color: transparent;
+	-fx-background-image: url("/images/save.png");
+	-fx-background-size: stretch;
+	background-repeat: no-repeat;
+}
+#btnSaveDrawing:hover {
+	-fx-background-color: transparent;
+	-fx-background-image: url("/images/saveHover.png");
+
+	-fx-background-size: stretch;
+	background-repeat: no-repeat;
+	-fx-translate-y:-5;
+	-fx-translate-x:2;
+	
+}
+
+#btnEraser:hover{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/images/betterEraser.png");
+    -fx-background-repeat: no-repeat;
+    -fx-pref-height:65;
+    -fx-translate-y:-15;
+        
+}
+
+#btnBin{
+    -fx-background-color: transparent;
+    -fx-background-image: url("/images/closeBin.png");
+    -fx-background-repeat: no-repeat;
+}
+
+#btnBin:hover {
+    -fx-background-color: transparent;
+    -fx-background-image: url("/images/openBin.png");
+    -fx-background-repeat: no-repeat;
+      -fx-pref-height:50;
+    -fx-translate-y:-15;
+}
+
+
+#zenTitle {
+	-fx-background-color: transparent;
+    -fx-background-image: url("/images/zenTitle.png");
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+}
+
+#colourPicker {
+	-fx-background-color: transparent;
+	-fx-background-image: url("/images/colourPicker.png");
+	-fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+    
+}
+#colourPicker:hover {
+	-fx-background-color: transparent;
+	-fx-background-image: url("/images/colourPickerHover.png");
+	-fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+    
+    -fx-translate-y:-5;
+}
+
+#normal {
+	 -fx-background-color:transparent;
+    -fx-background-image: url("/images/normal.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size:cover;
+}
+
+#normal:hover {
+	 -fx-background-color:transparent;
+    -fx-background-image: url("/images/normal.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size:cover;
+    -fx-pref-height:5;
+    -fx-translate-y:-5;
+}
+
+#zen {
+	 -fx-background-color:transparent;
+    -fx-background-image: url("/images/zen.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size:cover;
+}
+
+#zen:hover {
+		 -fx-background-color:transparent;
+    -fx-background-image: url("/images/zen.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size:cover;
+	 -fx-pref-height:5;
+    -fx-translate-y:-5;
+}
+
+#hiddenWord {
+	 -fx-background-color:transparent;
+    -fx-background-image: url("/images/hiddenWord.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size:cover;
+}
+
+#hiddenWord:hover {
+	 -fx-background-color:transparent;
+    -fx-background-image: url("/images/hiddenWord.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size:cover;
+     -fx-pref-height:5;
+    -fx-translate-y:-5;
+    
+}
+#selectModeTitle {
+	-fx-background-color: transparent;
+    -fx-background-image: url("/images/selectModeTitle.png");
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+
+}
+#back{
+    -fx-background-color:transparent;
+    -fx-background-image: url("/images/background.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size:cover;
+}
+
+
+
+#topcanvas{
+    -fx-background-image: url("/images/topcanvas.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size:cover;
+}
+
+#canvas{
+    -fx-background-image: url("/images/botcanvas.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size:cover;
+}
+
+#quit{
+    -fx-background-color:transparent;
+    -fx-background-image: url("/images/quit.png");
+    -fx-background-repeat: no-repeat;
+    
+}
+#quit:hover{
+    -fx-background-color:transparent;
+    -fx-background-image: url("/images/darkQuit.png");
+    -fx-background-repeat: no-repeat;
+
+}
+
+#quitZen {
+	 -fx-background-color:transparent;
+    -fx-background-image: url("/images/quit.png");
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+}
+#quitZen:hover {
+	 -fx-background-color:transparent;
+    -fx-background-image: url("/images/darkQuit.png");
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+}
+
+#btnSelect{
+    -fx-background-color:transparent;
+    -fx-background-image: url("/images/tick.png");
+    -fx-background-repeat: no-repeat;
+}
+
+#btnSelect:hover{
+    -fx-background-color:transparent;
+    -fx-background-image: url("/images/darkTick.png");
+    -fx-background-repeat: no-repeat;
+}
+
+#btnHome{
+    -fx-background-color:transparent;
+    -fx-background-image: url("/images/home.png");
+    -fx-background-repeat: no-repeat;
+}
+
+#btnHome:hover{
+    -fx-background-color:transparent;
+    -fx-background-image: url("/images/hoverHome.png");
+    -fx-background-repeat: no-repeat;
+}
+
+#btnGo{
+    -fx-background-color:transparent;
+    -fx-background-image: url("/images/darkTick.png");
+    -fx-background-repeat: no-repeat;
+}
+
+#btnGo:hover{
+    -fx-background-color:transparent;
+    -fx-background-image: url("/images/darkTick.png");
+    -fx-background-repeat: no-repeat;
+}
+
+#btnStats{
+    -fx-background-image: url("/images/stats.png");
+    -fx-background-repeat: no-repeat;   
+    -fx-background-position: center;
+    -fx-background-size:50%;
+    -fx-background-color:
+            #ffcc05,
+            linear-gradient(gold, gold);    
+    -fx-background-insets: 0,3;
+    -fx-background-radius: 50%;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+}
+
+#btnStats:hover{
+    -fx-background-image: url("/images/darkStats.png");
+    -fx-background-color:
+            #ffcc05,
+            linear-gradient(rgba(255, 217, 0, 0.95), rgba(255, 217, 0, 0.95));
+    -fx-background-insets: 0,3;
+    -fx-background-radius: 50%;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-scale-x: 105%;
+    -fx-scale-y: 105%;
+    
+}
+
+
+#btnPlus{
+    -fx-background-color:transparent;
+    -fx-background-image: url("/images/plus.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: stretch;
+}
+
+#btnPlus:hover{
+    -fx-background-color:transparent;
+    -fx-background-image: url("/images/darkPlus.png")
+}
+
+
+#btnUser {
+    -fx-background-image:url("/images/user.png");
+    -fx-background-repeat: no-repeat;   
+    -fx-background-position: center;
+    -fx-background-size:50%;
+    -fx-background-color:
+            #ffcc05,
+            linear-gradient(gold, gold);    
+    -fx-background-insets: 0,3;
+    -fx-background-radius: 50%;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+}
+
+#btnUser:hover {
+    -fx-background-image:url("/images/hoverUser.png");
+    -fx-background-color:
+            #ffcc05,
+            linear-gradient(rgba(255, 217, 0, 0.95), rgba(255, 217, 0, 0.95));
+    -fx-background-insets: 0,3;
+    -fx-background-radius: 50%;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-scale-x: 105%;
+    -fx-scale-y: 105%;
+}
+
+#wordDifficulty {
+	 -fx-background-color:transparent;
+    -fx-background-image: url("/images/difficulty/wordDifficulty.png");
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+}
+
+#timeDifficulty {
+	 -fx-background-color:transparent;
+    -fx-background-image: url("/images/difficulty/timeDifficulty.png");
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+}
+#accuracy {
+	 -fx-background-color:transparent;
+    -fx-background-image: url("/images/difficulty/accuracy.png");
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+}
+#confidence {
+	 -fx-background-color:transparent;
+    -fx-background-image: url("/images/difficulty/confidence.png");
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+}
+
+#cycle{
+	-fx-background-color:transparent;
+    -fx-background-image: url("/images/difficulty/cycle.png");
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+}
+#cycle:hover{
+	-fx-background-color:transparent;
+    -fx-background-image: url("/images/difficulty/cycle.png");
+    -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+    -fx-rotate: 80;
+}
+#difficultyQuit {
+		 -fx-background-color:transparent;
+	    -fx-background-image: url("/images/quit.png");
+	  -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+}
+
+#difficultyQuit:hover {
+		 -fx-background-color:transparent;
+	    -fx-background-image: url("/images/darkQuit.png");
+	  -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+}
+
+#lblDifficulty {
+	 -fx-background-color:yellow;
+	
+}
+
+#difficultyDescription {
+		 -fx-background-color:white;
+	
+}
+
+
+#badgesTitle {
+		 -fx-background-color:transparent;
+	    -fx-background-image: url("/images/badgesTitle.png");
+	    -fx-background-size: stretch;
+}
+#selectProfile {
+	 -fx-background-color:transparent;
+	    -fx-background-image: url("/images/selectProfile.png");
+
+	  -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+}
+
+
+#badgesPane {
+	-fx-border-color: #fcc404;
+	-fx-border-width: 10px;
+}
+#enterYourName {
+		 -fx-background-color:transparent;
+	    -fx-background-image: url("/images/enterYourName.png");
+	  -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+
+}
+#ttsButton {
+	 -fx-background-color:turquoise;
+	 -fx-background-size: stretch;
+	    -fx-background-image: url("/images/volume.png");
+    -fx-background-repeat: no-repeat;
+
+}
+
+#toggleBGM {
+			 -fx-background-color:transparent;
+	
+	  -fx-background-size: stretch;
+    -fx-background-repeat: no-repeat;
+}

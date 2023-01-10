@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+
+<BorderPane id="back" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/stylesheet.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nz.ac.auckland.se206.controllers.SelectModeController">
+
+   <top>
+      <Label id="selectModeTitle" fx:id="lblSelectModeTitle" prefHeight="82.0" prefWidth="351.0" stylesheets="@../css/stylesheet.css" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="40.0" />
+         </font>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+   <center>
+      <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+
+            <Button id="normal" fx:id="btnNormalMode" maxWidth="300.0" minHeight="100.0" minWidth="300.0" mnemonicParsing="false" onAction="#onSelectNormalMode" stylesheets="@../css/stylesheet.css">
+
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+
+            <Button id="hiddenWord" fx:id="btnHiddenWordMode" maxWidth="300.0" minHeight="100.0" minWidth="300.0" mnemonicParsing="false" onAction="#onSelectHiddenWordMode" stylesheets="@../css/stylesheet.css">
+
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+
+            <Button id="zen" fx:id="btnZenMode" maxWidth="300.0" minHeight="100.0" minWidth="300.0" mnemonicParsing="false" onAction="#onSelectZenMode" stylesheets="@../css/stylesheet.css">
+
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </center>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+
+            <Button id="quit" fx:id="btnBack" mnemonicParsing="false" onAction="#onSelectBack" prefHeight="155.0" prefWidth="90.0" stylesheets="@../css/stylesheet.css">
+
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

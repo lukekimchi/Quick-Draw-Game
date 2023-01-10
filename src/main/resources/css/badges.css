@@ -1,0 +1,43 @@
+.button {
+	-fx-background-color: transparent;
+	-fx-background-size: stretch;
+	-fx-pref-width: 90px;
+	-fx-pref-height:90px;
+	
+}
+
+#firstWin {
+	-fx-background-image: url("/images/badges/firstWin.jpg");
+}
+
+#firstLoss {
+	-fx-background-image: url("/images/badges/firstLoss.jpg");
+
+}
+
+#tenWins {
+	-fx-background-image: url("/images/badges/tenWins.jpg");
+
+}
+
+#beatHardTime {
+	-fx-background-image: url("/images/badges/beatHardTime.jpg");
+
+}
+#beatMasterTime {
+	-fx-background-image: url("/images/badges/beatMasterTime.jpg");
+
+}
+
+#allEasyWords {
+	-fx-background-image: url("/images/badges/allEasyWords.jpg");
+
+}
+#allMediumWords {
+	-fx-background-image: url("/images/badges/allMediumWords.jpg");
+
+}
+#allHardWords {
+	-fx-background-image: url("/images/badges/allHardWords.jpg");
+
+}

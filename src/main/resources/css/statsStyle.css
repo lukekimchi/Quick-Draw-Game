@@ -1,0 +1,10 @@
+.label {
+-fx-background-color:#8cfffb;
+-fx-text-alignment:center;
+-fx-alignment:center;
+-fx-line-spacing:50;
+-fx-border-color:#ffcc05;
+-fx-border-width:8;
+-fx-border-radius:4;
+-fx-background-radius:4;
+}

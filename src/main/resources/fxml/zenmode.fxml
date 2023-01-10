@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane id="back" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/stylesheet.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nz.ac.auckland.se206.controllers.ZenModeController">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="48.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <ColorPicker id="colourPicker" fx:id="colourPicker" onAction="#onChangeColour" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/stylesheet.css">
+
+               <value>
+                  <Color />
+               </value>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ColorPicker>
+            <Button id="btnPen" fx:id="btnPen" mnemonicParsing="false" onAction="#onSetPen" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/stylesheet.css">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="btnEraser" fx:id="btnEraser" mnemonicParsing="false" onAction="#onSetEraser" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/stylesheet.css">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="btnBin" fx:id="btnClear" mnemonicParsing="false" onAction="#onClear" prefHeight="50.0" prefWidth="50.0" stylesheets="@../css/stylesheet.css">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="btnSaveDrawing" fx:id="btnSaveDrawing" mnemonicParsing="false" onAction="#onSaveDrawing" prefHeight="56.0" prefWidth="50.0" stylesheets="@../css/stylesheet.css" />
+         </children>
+      </HBox>
+   </bottom>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="273.0" prefWidth="84.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button id="quitZen" fx:id="btnQuit" mnemonicParsing="false" onAction="#onQuit" prefHeight="73.0" prefWidth="79.0" stylesheets="@../css/stylesheet.css" />
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: lightblue;">
+               <children>
+                  <Label text="SIZE">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Slider fx:id="sliderSize" majorTickUnit="2.0" max="10.0" min="2.0" minorTickCount="1" onDragDetected="#onChangeSize" orientation="VERTICAL" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="6.0" />
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <top>
+      <HBox alignment="CENTER" prefHeight="79.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="zenTitle" prefHeight="69.0" prefWidth="360.0" stylesheets="@../css/stylesheet.css">
+               <font>
+                  <Font size="25.0" />
+               </font>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <right>
+      <VBox prefHeight="310.0" prefWidth="170.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Your drawing is..." textFill="#e8d04c">
+               <font>
+                  <Font name="Chalkboard SE Light" size="21.0" />
+               </font>
+            </Label>
+            <FlowPane fx:id="fpPredict" prefHeight="230.0" prefWidth="160.0" style="-fx-background-color: lightblue;" vgap="5.0" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+   <center>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="300.0" minWidth="370.0" prefHeight="300.0" prefWidth="370.0" style="-fx-background-color: #FFFFFF;" BorderPane.alignment="CENTER">
+         <children>
+            <Canvas fx:id="canvas" height="300.0" width="370.0" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+   </center>
+</BorderPane>
